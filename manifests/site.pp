@@ -11,7 +11,7 @@ node 'master.puppet.vm' {
 
   file { '/root/README':
     ensure  => file,
-    content => $fqdn,
+    content => "You are now logged into ${fqdn}",
     owner   => 'root'
   }
 }
